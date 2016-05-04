@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A547AF061CD83E4B00C6A5FB /* ZipCodeTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A547AF051CD83E4B00C6A5FB /* ZipCodeTextFieldDelegate.swift */; };
+		A547AF081CD8442C00C6A5FB /* CurrencyTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A547AF071CD8442C00C6A5FB /* CurrencyTextFieldDelegate.swift */; };
+		A5E41D9D1CD3DA1D006A7FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E41D9C1CD3DA1D006A7FCF /* AppDelegate.swift */; };
+		A5E41D9F1CD3DA1D006A7FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E41D9E1CD3DA1D006A7FCF /* ViewController.swift */; };
+		A5E41DA21CD3DA1D006A7FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E41DA01CD3DA1D006A7FCF /* Main.storyboard */; };
+		A5E41DA51CD3DA1D006A7FCF /* FunkyTextFields.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A5E41DA31CD3DA1D006A7FCF /* FunkyTextFields.xcdatamodeld */; };
+		A5E41DA71CD3DA1D006A7FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E41DA61CD3DA1D006A7FCF /* Assets.xcassets */; };
+		A5E41DAA1CD3DA1D006A7FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E41DA81CD3DA1D006A7FCF /* LaunchScreen.storyboard */; };
+		A5E41DB51CD3DA1D006A7FCF /* FunkyTextFieldsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E41DB41CD3DA1D006A7FCF /* FunkyTextFieldsTests.swift */; };
+		A5E41DC01CD3DA1D006A7FCF /* FunkyTextFieldsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E41DBF1CD3DA1D006A7FCF /* FunkyTextFieldsUITests.swift */; };
+		A5E41DCF1CD40841006A7FCF /* EmojiTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E41DCE1CD40841006A7FCF /* EmojiTextFieldDelegate.swift */; };
+		A5E41DD11CD44837006A7FCF /* ColorizerTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E41DD01CD44837006A7FCF /* ColorizerTextFieldDelegate.swift */; };
+		A5E41DD31CD45B71006A7FCF /* ColorChangingTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E41DD21CD45B71006A7FCF /* ColorChangingTextFieldDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5E41DB11CD3DA1D006A7FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5E41D911CD3DA1D006A7FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5E41D981CD3DA1D006A7FCF;
+			remoteInfo = FunkyTextFields;
+		};
+		A5E41DBC1CD3DA1D006A7FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5E41D911CD3DA1D006A7FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5E41D981CD3DA1D006A7FCF;
+			remoteInfo = FunkyTextFields;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A547AF051CD83E4B00C6A5FB /* ZipCodeTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTextFieldDelegate.swift; sourceTree = "<group>"; };
+		A547AF071CD8442C00C6A5FB /* CurrencyTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyTextFieldDelegate.swift; sourceTree = "<group>"; };
+		A5E41D991CD3DA1D006A7FCF /* FunkyTextFields.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunkyTextFields.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E41D9C1CD3DA1D006A7FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5E41D9E1CD3DA1D006A7FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5E41DA11CD3DA1D006A7FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5E41DA41CD3DA1D006A7FCF /* FunkyTextFields.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FunkyTextFields.xcdatamodel; sourceTree = "<group>"; };
+		A5E41DA61CD3DA1D006A7FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5E41DA91CD3DA1D006A7FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5E41DAB1CD3DA1D006A7FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E41DB01CD3DA1D006A7FCF /* FunkyTextFieldsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunkyTextFieldsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E41DB41CD3DA1D006A7FCF /* FunkyTextFieldsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunkyTextFieldsTests.swift; sourceTree = "<group>"; };
+		A5E41DB61CD3DA1D006A7FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E41DBB1CD3DA1D006A7FCF /* FunkyTextFieldsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FunkyTextFieldsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E41DBF1CD3DA1D006A7FCF /* FunkyTextFieldsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunkyTextFieldsUITests.swift; sourceTree = "<group>"; };
+		A5E41DC11CD3DA1D006A7FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E41DCE1CD40841006A7FCF /* EmojiTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiTextFieldDelegate.swift; sourceTree = "<group>"; };
+		A5E41DD01CD44837006A7FCF /* ColorizerTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorizerTextFieldDelegate.swift; sourceTree = "<group>"; };
+		A5E41DD21CD45B71006A7FCF /* ColorChangingTextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorChangingTextFieldDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5E41D961CD3DA1D006A7FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E41DAD1CD3DA1D006A7FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E41DB81CD3DA1D006A7FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5E41D901CD3DA1D006A7FCF = {
+			isa = PBXGroup;
+			children = (
+				A5E41D9B1CD3DA1D006A7FCF /* FunkyTextFields */,
+				A5E41DB31CD3DA1D006A7FCF /* FunkyTextFieldsTests */,
+				A5E41DBE1CD3DA1D006A7FCF /* FunkyTextFieldsUITests */,
+				A5E41D9A1CD3DA1D006A7FCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5E41D9A1CD3DA1D006A7FCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5E41D991CD3DA1D006A7FCF /* FunkyTextFields.app */,
+				A5E41DB01CD3DA1D006A7FCF /* FunkyTextFieldsTests.xctest */,
+				A5E41DBB1CD3DA1D006A7FCF /* FunkyTextFieldsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5E41D9B1CD3DA1D006A7FCF /* FunkyTextFields */ = {
+			isa = PBXGroup;
+			children = (
+				A5E41DCD1CD407CF006A7FCF /* Delegates */,
+				A5E41D9C1CD3DA1D006A7FCF /* AppDelegate.swift */,
+				A5E41D9E1CD3DA1D006A7FCF /* ViewController.swift */,
+				A5E41DA01CD3DA1D006A7FCF /* Main.storyboard */,
+				A5E41DA61CD3DA1D006A7FCF /* Assets.xcassets */,
+				A5E41DA81CD3DA1D006A7FCF /* LaunchScreen.storyboard */,
+				A5E41DAB1CD3DA1D006A7FCF /* Info.plist */,
+				A5E41DA31CD3DA1D006A7FCF /* FunkyTextFields.xcdatamodeld */,
+			);
+			path = FunkyTextFields;
+			sourceTree = "<group>";
+		};
+		A5E41DB31CD3DA1D006A7FCF /* FunkyTextFieldsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5E41DB41CD3DA1D006A7FCF /* FunkyTextFieldsTests.swift */,
+				A5E41DB61CD3DA1D006A7FCF /* Info.plist */,
+			);
+			path = FunkyTextFieldsTests;
+			sourceTree = "<group>";
+		};
+		A5E41DBE1CD3DA1D006A7FCF /* FunkyTextFieldsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A5E41DBF1CD3DA1D006A7FCF /* FunkyTextFieldsUITests.swift */,
+				A5E41DC11CD3DA1D006A7FCF /* Info.plist */,
+			);
+			path = FunkyTextFieldsUITests;
+			sourceTree = "<group>";
+		};
+		A5E41DCD1CD407CF006A7FCF /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				A547AF071CD8442C00C6A5FB /* CurrencyTextFieldDelegate.swift */,
+				A5E41DCE1CD40841006A7FCF /* EmojiTextFieldDelegate.swift */,
+				A547AF051CD83E4B00C6A5FB /* ZipCodeTextFieldDelegate.swift */,
+				A5E41DD01CD44837006A7FCF /* ColorizerTextFieldDelegate.swift */,
+				A5E41DD21CD45B71006A7FCF /* ColorChangingTextFieldDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5E41D981CD3DA1D006A7FCF /* FunkyTextFields */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E41DC41CD3DA1D006A7FCF /* Build configuration list for PBXNativeTarget "FunkyTextFields" */;
+			buildPhases = (
+				A5E41D951CD3DA1D006A7FCF /* Sources */,
+				A5E41D961CD3DA1D006A7FCF /* Frameworks */,
+				A5E41D971CD3DA1D006A7FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunkyTextFields;
+			productName = FunkyTextFields;
+			productReference = A5E41D991CD3DA1D006A7FCF /* FunkyTextFields.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5E41DAF1CD3DA1D006A7FCF /* FunkyTextFieldsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E41DC71CD3DA1D006A7FCF /* Build configuration list for PBXNativeTarget "FunkyTextFieldsTests" */;
+			buildPhases = (
+				A5E41DAC1CD3DA1D006A7FCF /* Sources */,
+				A5E41DAD1CD3DA1D006A7FCF /* Frameworks */,
+				A5E41DAE1CD3DA1D006A7FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5E41DB21CD3DA1D006A7FCF /* PBXTargetDependency */,
+			);
+			name = FunkyTextFieldsTests;
+			productName = FunkyTextFieldsTests;
+			productReference = A5E41DB01CD3DA1D006A7FCF /* FunkyTextFieldsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5E41DBA1CD3DA1D006A7FCF /* FunkyTextFieldsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E41DCA1CD3DA1D006A7FCF /* Build configuration list for PBXNativeTarget "FunkyTextFieldsUITests" */;
+			buildPhases = (
+				A5E41DB71CD3DA1D006A7FCF /* Sources */,
+				A5E41DB81CD3DA1D006A7FCF /* Frameworks */,
+				A5E41DB91CD3DA1D006A7FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5E41DBD1CD3DA1D006A7FCF /* PBXTargetDependency */,
+			);
+			name = FunkyTextFieldsUITests;
+			productName = FunkyTextFieldsUITests;
+			productReference = A5E41DBB1CD3DA1D006A7FCF /* FunkyTextFieldsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5E41D911CD3DA1D006A7FCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Richa;
+				TargetAttributes = {
+					A5E41D981CD3DA1D006A7FCF = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					A5E41DAF1CD3DA1D006A7FCF = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = A5E41D981CD3DA1D006A7FCF;
+					};
+					A5E41DBA1CD3DA1D006A7FCF = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = A5E41D981CD3DA1D006A7FCF;
+					};
+				};
+			};
+			buildConfigurationList = A5E41D941CD3DA1D006A7FCF /* Build configuration list for PBXProject "FunkyTextFields" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5E41D901CD3DA1D006A7FCF;
+			productRefGroup = A5E41D9A1CD3DA1D006A7FCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5E41D981CD3DA1D006A7FCF /* FunkyTextFields */,
+				A5E41DAF1CD3DA1D006A7FCF /* FunkyTextFieldsTests */,
+				A5E41DBA1CD3DA1D006A7FCF /* FunkyTextFieldsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5E41D971CD3DA1D006A7FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E41DAA1CD3DA1D006A7FCF /* LaunchScreen.storyboard in Resources */,
+				A5E41DA71CD3DA1D006A7FCF /* Assets.xcassets in Resources */,
+				A5E41DA21CD3DA1D006A7FCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E41DAE1CD3DA1D006A7FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E41DB91CD3DA1D006A7FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5E41D951CD3DA1D006A7FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E41DD11CD44837006A7FCF /* ColorizerTextFieldDelegate.swift in Sources */,
+				A547AF081CD8442C00C6A5FB /* CurrencyTextFieldDelegate.swift in Sources */,
+				A5E41D9F1CD3DA1D006A7FCF /* ViewController.swift in Sources */,
+				A5E41D9D1CD3DA1D006A7FCF /* AppDelegate.swift in Sources */,
+				A5E41DA51CD3DA1D006A7FCF /* FunkyTextFields.xcdatamodeld in Sources */,
+				A5E41DCF1CD40841006A7FCF /* EmojiTextFieldDelegate.swift in Sources */,
+				A547AF061CD83E4B00C6A5FB /* ZipCodeTextFieldDelegate.swift in Sources */,
+				A5E41DD31CD45B71006A7FCF /* ColorChangingTextFieldDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E41DAC1CD3DA1D006A7FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E41DB51CD3DA1D006A7FCF /* FunkyTextFieldsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E41DB71CD3DA1D006A7FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E41DC01CD3DA1D006A7FCF /* FunkyTextFieldsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5E41DB21CD3DA1D006A7FCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5E41D981CD3DA1D006A7FCF /* FunkyTextFields */;
+			targetProxy = A5E41DB11CD3DA1D006A7FCF /* PBXContainerItemProxy */;
+		};
+		A5E41DBD1CD3DA1D006A7FCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5E41D981CD3DA1D006A7FCF /* FunkyTextFields */;
+			targetProxy = A5E41DBC1CD3DA1D006A7FCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5E41DA01CD3DA1D006A7FCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E41DA11CD3DA1D006A7FCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5E41DA81CD3DA1D006A7FCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E41DA91CD3DA1D006A7FCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5E41DC21CD3DA1D006A7FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5E41DC31CD3DA1D006A7FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5E41DC51CD3DA1D006A7FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FunkyTextFields/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Richa.FunkyTextFields;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A5E41DC61CD3DA1D006A7FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FunkyTextFields/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Richa.FunkyTextFields;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A5E41DC81CD3DA1D006A7FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FunkyTextFieldsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Richa.FunkyTextFieldsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FunkyTextFields.app/FunkyTextFields";
+			};
+			name = Debug;
+		};
+		A5E41DC91CD3DA1D006A7FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FunkyTextFieldsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Richa.FunkyTextFieldsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FunkyTextFields.app/FunkyTextFields";
+			};
+			name = Release;
+		};
+		A5E41DCB1CD3DA1D006A7FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FunkyTextFieldsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Richa.FunkyTextFieldsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FunkyTextFields;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A5E41DCC1CD3DA1D006A7FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = FunkyTextFieldsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Richa.FunkyTextFieldsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FunkyTextFields;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5E41D941CD3DA1D006A7FCF /* Build configuration list for PBXProject "FunkyTextFields" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E41DC21CD3DA1D006A7FCF /* Debug */,
+				A5E41DC31CD3DA1D006A7FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E41DC41CD3DA1D006A7FCF /* Build configuration list for PBXNativeTarget "FunkyTextFields" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E41DC51CD3DA1D006A7FCF /* Debug */,
+				A5E41DC61CD3DA1D006A7FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E41DC71CD3DA1D006A7FCF /* Build configuration list for PBXNativeTarget "FunkyTextFieldsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E41DC81CD3DA1D006A7FCF /* Debug */,
+				A5E41DC91CD3DA1D006A7FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E41DCA1CD3DA1D006A7FCF /* Build configuration list for PBXNativeTarget "FunkyTextFieldsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E41DCB1CD3DA1D006A7FCF /* Debug */,
+				A5E41DCC1CD3DA1D006A7FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A5E41DA31CD3DA1D006A7FCF /* FunkyTextFields.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A5E41DA41CD3DA1D006A7FCF /* FunkyTextFields.xcdatamodel */,
+			);
+			currentVersion = A5E41DA41CD3DA1D006A7FCF /* FunkyTextFields.xcdatamodel */;
+			path = FunkyTextFields.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A5E41D911CD3DA1D006A7FCF /* Project object */;
+}
