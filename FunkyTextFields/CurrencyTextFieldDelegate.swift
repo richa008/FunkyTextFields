@@ -9,26 +9,36 @@
 import Foundation
 import UIKit
 
+let maxNumber: Float = 99.99;
+
 class CurrencyTextFieldDelegate : NSObject, UITextFieldDelegate{
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
         var newText: String = ""
-        var dollars : Double = 0
+        var dollars : Float = 0
         
         if let text = textField.text{
             newText = String((text + string).characters.dropFirst())
         }
-     
-        let doubleValue = Double(newText)
-        if let doubleValue = doubleValue{
-            dollars = doubleValue * 10
+        let doubleValue = Float(newText)
+        if(string != ""){
+            if let doubleValue = doubleValue{
+                dollars = doubleValue * 10
+            }
+        }else{
+            if let doubleValue = doubleValue{
+                dollars = doubleValue / 10
+            }
         }
         
-        if(dollars < 99.99){
+        if(dollars < maxNumber){
             let formatter = NSNumberFormatter()
             formatter.numberStyle = .CurrencyStyle
-            textField.text = formatter.stringFromNumber(NSNumber(double: dollars))
+            if(string == ""){
+                formatter.roundingMode = .RoundDown
+            }
+            textField.text = formatter.stringFromNumber(NSNumber(float: dollars))
             
         }
         return false
