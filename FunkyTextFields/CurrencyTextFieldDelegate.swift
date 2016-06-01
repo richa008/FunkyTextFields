@@ -9,37 +9,66 @@
 import Foundation
 import UIKit
 
-let maxNumber: Float = 99.99;
-
 class CurrencyTextFieldDelegate : NSObject, UITextFieldDelegate{
     
     func textField(textField: UITextField, shouldChangeCharactersInRange range: NSRange, replacementString string: String) -> Bool {
         
-        var newText: String = ""
-        var dollars : Float = 0
+        let maxNumberLength = 12
         
-        if let text = textField.text{
-            newText = String((text + string).characters.dropFirst())
-        }
-        let doubleValue = Float(newText)
-        if(string != ""){
-            if let doubleValue = doubleValue{
-                dollars = doubleValue * 10
-            }
-        }else{
-            if let doubleValue = doubleValue{
-                dollars = doubleValue / 10
-            }
-        }
+        let currencyFormattor = NSNumberFormatter()
+        currencyFormattor.numberStyle = .CurrencyStyle
+        currencyFormattor.minimumFractionDigits = 2
+        currencyFormattor.maximumFractionDigits = 2
         
-        if(dollars < maxNumber){
-            let formatter = NSNumberFormatter()
-            formatter.numberStyle = .CurrencyStyle
-            if(string == ""){
-                formatter.roundingMode = .RoundDown
-            }
-            textField.text = formatter.stringFromNumber(NSNumber(float: dollars))
+        let textFieldString = textField.text
+        let textFieldLength = textFieldString?.characters.count
+        var cursorPosition : Int = 0
+        let startPosition : UITextPosition = textField.beginningOfDocument
+        if let selectedTextRange = textField.selectedTextRange{
             
+            cursorPosition = textField.offsetFromPosition(startPosition, toPosition: selectedTextRange.start)
+        }
+
+        
+        var replacedNumberString: String = ""
+        
+        //Remove $
+        if let textFieldString = textFieldString{
+            replacedNumberString = (textFieldString as NSString).stringByReplacingCharactersInRange(range, withString: string)
+            
+            var toArray = replacedNumberString.componentsSeparatedByString("$")
+            replacedNumberString = toArray.joinWithSeparator("")
+            
+            toArray = replacedNumberString.componentsSeparatedByCharactersInSet(NSCharacterSet .punctuationCharacterSet())
+            replacedNumberString = toArray.joinWithSeparator("")
+        }
+        
+        
+        if replacedNumberString.characters.count > maxNumberLength{
+            return false
+        }
+        
+        let textFieldNumber = Double(replacedNumberString)
+        if let textFieldNumber = textFieldNumber{
+            let textFieldNewValue = textFieldNumber/100
+            let textFieldStringValue = currencyFormattor.stringFromNumber(textFieldNewValue)
+            textField.text = textFieldStringValue
+        }
+   
+        if let textFieldLength = textFieldLength{
+            if(textFieldLength > cursorPosition){
+                let difference = textFieldLength - cursorPosition
+                let newLength = textField.text?.characters.count
+                if let newLength = newLength{
+                    let newOffset = newLength - difference
+                    let newCursorPosition = textField.positionFromPosition(startPosition, offset: newOffset)
+                    if let newCursorPosition = newCursorPosition{
+                        let newSelectedRange = textField.textRangeFromPosition(newCursorPosition, toPosition: newCursorPosition)
+                        textField.selectedTextRange = newSelectedRange
+                    }
+                }
+                
+            }
         }
         return false
     }
